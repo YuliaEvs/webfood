@@ -8,8 +8,6 @@ const db = mongoose.connection;
 //   console.log(`Connected to ${db.name} at ${db.host}:${db.port}`);
 // });
 
-// mongodb+srv://webfood:<password>@cluster0.gsrox4a.mongodb.net/
-
 const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
@@ -17,7 +15,7 @@ const MongoClient = mongodb.MongoClient;
 let database;
 
 async function connect() {
-    const client = await MongoClient.connect('mongodb+srv://webfood:<webfood>@cluster0.gsrox4a.mongodb.net/');
+    const client = await MongoClient.connect('mongodb://127.0.0.1:27017');
     database = client.db('webfood');
 }
 
