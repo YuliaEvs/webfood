@@ -1,4 +1,4 @@
-# WEBFOOD app
+WEBFOOD app
 
 Screenshots
 
@@ -20,4 +20,3 @@ React
 Node js
 Express
 Morgan
-
